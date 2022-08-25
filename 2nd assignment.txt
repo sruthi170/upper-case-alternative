@@ -1,0 +1,23 @@
+2./* Program to read a  string and convert alternative character into upper case  */
+
+#include<stdio.h>
+main()
+{
+		char Str1[100];
+  	int i;
+ 
+  	printf("\n enter a string:");
+  	gets(Str1);
+  	
+  	for (i = 0; Str1[i]!='\0'; i=i+2);
+  	{
+  		if(Str1[i] >= 'a' && Str1[i] <= 'z')
+  		{
+  			Str1[i] = Str1[i] -32;
+		}
+  	}
+
+  	printf("\n The given String in Upper Case = %s", Str1);
+  	
+  	return 0;
+}
